@@ -1,27 +1,246 @@
-.header_container{
-  background: #4542a4;
-  padding:10px 30px;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  align-items: center;
-  color:#fff;
+  padding: 20px 70px;
+  background-color: #004698;
 }
 
-.header_container img{
-  width: 50px;
+a{
+  text-decoration: none;
+  color: aliceblue;
+  text-transform: uppercase;
 }
 
-.header_container nav ul{
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+nav img {
+    height: 55px;
+    margin-top: 21px;
+    margin-bottom: -50px
 }
-.header_container nav ul li{
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding-right: 20px;
+
+.logo{
+  text-transform: uppercase;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  height: 55px;
 }
-.header_container nav ul li:last-child{
-  padding-right: 10px;
+
+nav ul{
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  padding-left: 510px;
+  margin-top: -36px;
+  padding-bottom: 40px;
+}
+
+nav a{
+  margin: 0 15px;
+  transition: color .4s ease;
+  color: #FFC700;
+}
+nav a:hover{
+  color: white;
+}
+
+li:hover{
+  cursor: pointer;
+}
+
+.btn{
+  padding: 15px 30px;
+  border-radius: 50px;
+  background: #FFC700;
+  margin-right: 10px;
+  transition: opacity .4s ease;
+  display: block;
+}
+
+.btn:hover{
+  opacity: .6;
+}
+
+@media only screen and (min-width: 480px) {
+
+  header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 70px;
+    background-color: #004698;
+}
+
+nav img {
+  height: 55px;
+  margin-top: 21px;
+  margin-bottom: -50px;
+  padding-left: 145px;
+  display: block;
+}
+
+nav a{
+  margin: 0 15px;
+  transition: color .4s ease;
+  color: #FFC700;
+  display: none;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  padding-left: 100px;
+  margin-top: 32px;
+  padding-bottom: 40px;
+}
+
+.btn{
+padding: 15px 30px;
+border-radius: 50px;
+background: #FFC700;
+margin-right: 10px;
+transition: opacity .4s ease;
+display: none;
+}
+
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 70px;
+    background-color: #004698;
+}
+
+nav img {
+  height: 55px;
+  margin-top: 21px;
+  margin-bottom: -50px;
+  padding-left: 15px;
+}
+
+nav a{
+  margin: 0 15px;
+  transition: color .4s ease;
+  color: #FFC700;
+  display: none;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  padding-left: 100px;
+  margin-top: 32px;
+  padding-bottom: 40px;
+}
+
+.btn{
+  padding: 15px 30px;
+  border-radius: 50px;
+  background: #FFC700;
+  margin-right: 10px;
+  transition: opacity .4s ease;
+  display: block;
+}
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+  header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 70px;
+    background-color: #004698;
+  }
+  
+  a{
+    text-decoration: none;
+    color: aliceblue;
+    text-transform: uppercase;
+  }
+  
+  nav img {
+      height: 55px;
+      margin-top: 21px;
+      margin-bottom: -40px
+  }
+  
+  .logo{
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    height: 55px;
+  }
+  
+  nav ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    margin-top: -33px;
+    padding-bottom: 44px;
+  }
+  
+  nav a{
+    margin: 0 15px;
+    transition: color .4s ease;
+    color: #FFC700;
+    display: block;
+  }
+  
+  nav a:hover{
+    color: white;
+  }
+  
+  li:hover{
+    cursor: pointer;
+  }
+  
+  .btn{
+    padding: 15px 30px;
+    border-radius: 50px;
+    background: #FFC700;
+    margin-right: 10px;
+    transition: opacity .4s ease;
+    display: block;
+  }
+  
+  .btn:hover{
+    opacity: .6;
+}
+
 }
